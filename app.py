@@ -15,7 +15,7 @@ VALIDATION_TOKEN = os.environ.get('VALIDATION_TOKEN', 'test')
 PAGE_ACCESS_TOKEN = os.environ.get('PAGE_ACCESS_TOKEN', 'test')
 
 
-class EchoBot(Bot):
+class CatGifBot(Bot):
 
     def handle_message(self, messaging_event):
         sender_id = messaging_event["sender"]["id"]
@@ -23,15 +23,15 @@ class EchoBot(Bot):
         self.send_attachment(sender_id, Attachment(ATTACHMENT_TYPE_IMAGE, url))
 
 
-class CatGifBot(Bot):
+class EchoBot(Bot):
 
     def handle_message(self, messaging_event):
         sender_id = messaging_event['sender']['id']
-        random_image_url = requests.get(API_URL).url
-        self.send_attachment(sender_id, Attachment(ATTACHMENT_TYPE_IMAGE, random_image_url))
+        text = messaging_event['message']['text']
+        self.send_text_message(sender_id, text)
 
 
-chat_bot = CatGifBot(VALIDATION_TOKEN, PAGE_ACCESS_TOKEN)
+chat_bot = EchoBot(VALIDATION_TOKEN, PAGE_ACCESS_TOKEN)
 
 
 @app.route("/webhook", methods=["GET", "POST"])
