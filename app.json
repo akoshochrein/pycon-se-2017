@@ -1,0 +1,12 @@
+{
+    "name": "Messenger chat bot sample",
+    "description": "Messenger chat bot sample with Python and Flask",
+    "repository": "https://github.com/akoskaaa/pycon-se-2017",
+    "logo": "https://node-js-sample.herokuapp.com/node.png",
+    "keywords": [
+        "python",
+        "flask",
+        "messenger",
+        "chatbot"
+    ]
+}
