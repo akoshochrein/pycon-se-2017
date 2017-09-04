@@ -7,6 +7,8 @@ Demo chat application presented on PyCon Sweden in 2017.
 
 After hitting the button above, make sure to add your Facebook page access token and verification token to the environment variables in Heroku.
 
+For more help, please the use the ![quick start reference](https://developers.facebook.com/docs/messenger-platform/guides/quick-start/).
+
 ## Installation
 ```sh
 ./scripts/setup.sh
