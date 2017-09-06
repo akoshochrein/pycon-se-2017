@@ -9,6 +9,8 @@ After hitting the button above, make sure to add your Facebook page access token
 
 For more help, please the use the ![quick start reference](https://developers.facebook.com/docs/messenger-platform/guides/quick-start/).
 
+If you'd like to inspect the presentation for the talk, please do so ![here](https://prezi.com/view/ZoFgAjE1x8yfKIjGpLK0/).
+
 ## Installation
 ```sh
 ./scripts/setup.sh
